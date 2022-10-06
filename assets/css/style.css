@@ -20,8 +20,11 @@ main
     display: flex;
 }
 
+
+/* sidebar */
+
 .sidebar {
-width: 15%;
+flex:1;
 background-color: gray;
 height: calc(100%);
 display: flex;
@@ -29,42 +32,67 @@ flex-direction: column;
 justify-content: space-between;
 }
 
+.logo {
+    padding: 10px;
+}
+
 .top-nav {
     min-width: 100%;
     background-color: goldenrod;
 }
+
+.first_menu li{
+font-size: 1.2rem;
+padding-left: 20px;
+line-height: 30px;
+}
+
 
 .bottom-nav {
     width: 100%;
     background-color: gold;
 }
 
-.div-Songs {
-width: 90%;
-background-color: blue;
-overflow: auto;
-
-}
-
 .call-to-action{
     width: 100%;
     background-color: rgb(0, 0, 0);
     text-align: right;
+    position: sticky;
+    top: 0;
 }
 
 .active {
-border-left: 3px solid greenyellow;
+border-left: 3px solid greenyellow;}
+
+.nav-playlist h3{
+    margin-top: 10px;
+    padding: 20px;
+}
+.nav-playlist a {
+    text-decoration: none;
+    color: white;
+    margin-top: 60px;
 }
 
+.plus {
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 12px;
+    background-color: grey;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
 
 a.btn {
 color: white;
 border: 1px solid white;
-padding: 15px 50px;
-font-size: 1.1rem;
+padding: 15px 40px;
+margin-right: 20px;
+font-size: 0.9rem;
 border-radius: 50px;
 line-height: 100px;
-text-decoration: none;}
+text-decoration: none;
+max-width: 20px;}
 
 
 .nav-logo-mobile {
@@ -72,11 +100,40 @@ text-decoration: none;}
     text-align: center;
     padding: 5px;}
 
-.covers {
-background-color: rgb(4, 4, 138);
-width: 95%;
-margin: 0 auto;
+
+    /* big section all cover */
+
+.div-Songs {
+flex: 4.5;
+background-color: blue;
+overflow: auto;
+        
 }
+
+.covers {
+    background-color: rgb(140, 140, 255);
+    width: 95%;
+    margin: 0 auto;
+    }
+
+
+.list-nav {
+width: 100%;
+text-align: center;
+line-height: 40px;
+}
+
+.list-nav li {
+    display: inline;
+    padding: 8px;
+}
+
+.list-nav a {
+    text-decoration: none;
+}
+
+
+/* <!-- recently-played --> */
 
 #recently-played {
     background-color: yellow;
@@ -87,9 +144,49 @@ margin: 0 auto;
     flex-direction: row;
 }
 .container-cover img {
-    max-width: 70%;
+    max-width: 100%;
+    padding: 10px;
 }
 
+
+/* <!-- createfor --> */
+
+.menu-list-2{
+display: flex;
+}
+
+.container-cover-Nick img{
+flex-basis: 100%;
+height: 200px;
+padding: 10px;
+}
+.text-container {
+    text-align: center;
+    }
+.covers-row p {
+    margin-bottom: 25px;
+}
+
+    /* <!-- Popular artists --> */
+#popular {
+    display: flex;
+
+}
+.popular-img img {
+    flex-basis: 100%;
+    height: 220px;
+    border-radius: 360px;
+    padding: 15px;
+}
+
+.popular-title {
+    padding: 10px;
+    padding-top: 35px;
+}
+
+
+
+/* footer */
 footer {
 width: 100%;
 height: 100px;
@@ -105,6 +202,9 @@ justify-content: space-around;
 padding: 35px;
 }
 
+
+
+
 @media screen and (max-width: 1100px)
  {
 
@@ -112,14 +212,14 @@ padding: 35px;
     display: flex;
 flex-wrap: wrap;}
 
-li {
-flex-basis: 25%;}
+.pic-container{
+flex-basis: calc(100%/4);}
 }
 
 @media screen and (max-width: 768px)
 {
 
-    li {
+    .pic-container {
         flex-basis: 50%;}
         }
 

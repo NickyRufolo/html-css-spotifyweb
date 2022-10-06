@@ -19,21 +19,26 @@
                 </div>
                 <!-- logo -->
                 <!-- mobilelogo -->
-                <div class="nav-logo-mobile">
+                <!-- <div class="nav-logo-mobile">
                 <img src="./assets/img/logo-small.svg" alt="">
-                </div>
+                </div> -->
                 <!-- mobilelogo -->
                 <!-- main menu -->
                     <section class="nav-main-menu">
-                        <ul class="menu-list">
-                            <li class="active">Home
-                            </li>
-                            <li>  Search
-                            </li>
-                            <li> Your Library
-                            </li>
+                        <ul class="first_menu">
+                            <li class="active">Home</li>
+                            <li>  Search</li>
+                            <li> Your Library</li>
                         </ul>
-                        <p>dolor sit amet consectetur adipisicing elit. Qui officia sequi necessitatibus voluptatum, voluptatem voluptas impedit! Eos cumque asperiores mollitia error ea corporis vitae unde, omnis laudantium similique consequatur praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque in facilis temporibus? Assumenda ipsam optio eius repellendus quos quibusdam minima laborum fugit cumque? Quaerat iusto, quibusdam dolorum accusantium perspiciatis corporis.</p>
+                    </section>
+
+                    <section class="nav-playlist">
+                     <h3>PLAYLIST</h3>
+                     <a href="#">
+                        <span class="plus">+</span>
+                        <span class="New-playlist">New Playlist</span>
+                     </a>
+
                     </section>
             </section>
             <section class="bottom-nav">
@@ -46,7 +51,7 @@
 
 
             <!-- Songs Cotainer Big-->
-        <section class="div-Songs">
+    <section class="div-Songs">
             
                 <!-- nav bar header -->
                 <div class="call-to-action">
@@ -54,7 +59,17 @@
                 </div>
 
                 <!-- covers-->
-        <section class="covers">
+    <section class="covers">
+        <nav class="list-nav">
+            <ul>
+                <li><a href="#"> IN EVIDENZA</a></li>
+                <li><a href="#"> PODCAST</a></li>
+                <li><a href="#"> CLASSIFICHE</a></li>
+                <li><a href="#"> GENERI E MOOD</a></li>
+                <li><a href="#"> NUOVE USCITE</a></li>
+                <li><a href="#"> SCOPRI</a></li>
+            </ul>
+        </nav>
 
                 <!-- recently-played -->
                 <section id="recently-played" class="covers-row">
@@ -63,7 +78,7 @@
 
 
                 <!-- img1 -->
-                <li>
+                <li class="pic-container">
                     <div class="container-cover">
                         <img src="./assets/img/metal_lifting.jpg" alt="">
                    </div>
@@ -75,7 +90,7 @@
 
                  <!-- img2 -->
 
-                 <li>
+                 <li class="pic-container">
                     <div class="container-cover">
                          <img src="./assets/img/aquietplace.jpeg" alt="">
                      </div>
@@ -87,7 +102,7 @@
 
                      <!-- img3 -->
 
-                     <li>
+                     <li class="pic-container">
                         <div class="container-cover">
                           <img src="./assets/img/cure.jpeg" alt="">
                         </div>
@@ -98,7 +113,7 @@
                     </li>
 
                      <!-- img4 -->
-                     <li>
+                     <li class="pic-container">
                         <div class="container-cover">
                             <img src="./assets/img/sinister.jpeg" alt="">
                         </div>
@@ -110,7 +125,7 @@
 
 
                     <!-- img5 -->
-                    <li>
+                    <li class="pic-container">
                         <div class="container-cover">
                             <img src="./assets/img/split.jpeg "alt="">
                         </div>
@@ -122,7 +137,7 @@
 
 
                     <!-- img6 -->
-                    <li>
+                    <li class="pic-container">
                         <div class="container-cover">
                        <img src="./assets/img/stranger.jpeg" alt="">
                        </div>
@@ -137,18 +152,53 @@
 
                     <!-- createfor -->
                 <section id="create-for" class="covers-row">
-                    <h2>Create for John Doe
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quidem incidunt at, nam ab maiores labore facilis necessitatibus porro quisquam pariatur. Placeat nihil culpa quaerat vitae, id sequi porro
+                    <h2>Create for Nicky Rufolo
                     </h2>
-                    <ul></ul>
+                    <p>The more you listen, the more accurate the suggestions will be</p>
+                    <ul class="menu-list-2">
+                        <li class="create-for-li">
+                            <div class="container-cover-Nick">
+                                <img src="./assets/img/mixdaily.jpeg" alt="">
+                            </div>
+                            <div class="text-container">
+                                <h3>Daily Mix</h3>
+                             </div>
+                        </li>
+                        <li class="create-for-li">
+                            <div class="container-cover-Nick">
+                                <img src="./assets/img/radar.jpeg" alt="">
+                            </div>
+                            <div class="text-container">
+                                <h3>Realese Radar</h3>
+                             </div>
+                        </li>
+                    </ul>
                 </section>
 
-                   <!-- createfor -->
-                <section id="Popular" class="covers-row">
-                    <h2>Create for John Doe
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quidem incidunt at, nam ab maiores labore facilis necessitatibus porro quisquam pariatur. Placeat nihil culpa quaerat vitae, id sequi porro?
-                    </h2>
-                    <ul></ul>
+                   <!-- Popular artists -->
+                <div class="popular-title">
+                    <h1>Popular artists</h1>
+                    <p>The more you listen, the more accurate the suggestions will be</p>
+                </div>
+                <section id="popular" class="covers-row">
+                <div class="popular-div">
+                    <div class="popular-img">
+                        <img src="./assets/img/einaudi.jpeg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <h2>Ludovico Einaudi</h2>
+                    </div>
+                </div>
+
+                <div class="popular-div">
+                    <div class="popular-img">
+                        <img src="./assets/img/youg.jpeg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <h2>Lana Del Rey</h2>
+                    </div>
+                </div>
+                    
                 </section>
 
             </section>
