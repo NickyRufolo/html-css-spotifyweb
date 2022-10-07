@@ -43,7 +43,7 @@ justify-content: space-between;
 }
 
 .first_menu img{
-    width: 17px;
+    width: 14px;
 }
 
 .first_menu .active{
@@ -51,7 +51,7 @@ color: white;
 }
 
 .first_menu li{
-font-size: 1.1rem;
+font-size: 0.8rem;
 padding-left: 20px;
 line-height: 30px;
 color: rgb(166, 162, 162);
@@ -77,7 +77,7 @@ border-left: 3px solid greenyellow;}
 
 .nav-playlist h3{
     margin-top: 10px;
-    padding: 20px;
+    padding: 18px;
     color: white;
     font-weight: bold;
 }
@@ -90,31 +90,34 @@ border-left: 3px solid greenyellow;}
 .plus {
     color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
-    padding: 5px 12px;
+    padding: 4px 7px;
     background-color:  rgb(166, 162, 162);
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin-left: 20px;
-    margin-right: 5px
+    margin-right: 2px;
+    font-weight: bolder;
 }
 
 .New-playlist{
     color:  rgb(166, 162, 162);
+    font-size: 0.8rem;
 }
 
 .download-app img {
-    width: 17px;
-    margin-left: 13px;
-    margin-right:2px;
+    width: 14px;
+    margin-left: 10px;
     color: rgb(255, 255, 255);
     margin-bottom: -4px;
     
 }
 .download-app span {
-    font-size: 1rem;
+    font-size: 0.6rem;
     color:  rgb(166, 162, 162);
 }
 .playlist-name a {
     color:  rgb(166, 162, 162);
+    font-size: 0.6rem;
+    line-height: 0px;
 }
 
 .download-app {
@@ -129,23 +132,23 @@ padding-top: 15px;
 }
 
 .user img{
-    max-width: 15px;
+    max-width: 10px;
     margin-left: 12px;
-    margin-right: 3px;
+    margin-right: 2px;
     border: 1px solid white;
     border-radius: 360px;
     background-color: rgb(166, 162, 162);
 }
 
-.user h3 {
+.user p {
     display: inline;
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: white;
 }
 
 .user {
-margin-top: 10px;
 margin-bottom: 10px;
+margin-top: 10px;
 }
 
 
@@ -193,13 +196,13 @@ line-height: 40px;
 
 .list-nav li {
     display: inline;
-    padding: 8px;
+    padding: 7px;
 }
 
 .list-nav a {
     text-decoration: none;
     color:rgb(166, 162, 162);
-    font-size: 0.85rem;
+    font-size: 0.70rem;
 
 }
 
@@ -229,6 +232,12 @@ line-height: 40px;
     padding: 10px;
 }
 
+.text-container {
+    margin-top: -30px;
+    text-align: center;
+}
+
+
 
 /* <!-- createfor --> */
 
@@ -241,7 +250,7 @@ flex-basis: 100%;
 height: 200px;
 padding: 10px;
 }
-.text-container {
+.text-container2 {
     text-align: center;
     }
 .covers-row h2,h3{
@@ -284,77 +293,131 @@ color: rgb(166, 162, 162);
 footer {
 width: 100%;
 height: 100px;
-background-color: rgb(255, 0, 0);
+background-color: rgb(31, 31, 31);
 z-index: 1;
 position: relative;
 display: flex;
 justify-content: space-between;
 }
 
-.player-album
-{
-padding: 30px;
-background-color: rgb(31, 31, 31);
-flex-basis: 30%;
-display: flex;
+/* player album */
+
+.player-album {
+    /* background-color: green; */
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+}
+.sinister-pic {
+    width: 25%;
+    /* background-color: red; */
 }
 
-
-.sinister-cover img {
-    width: 60px;
+.sinister-pic img {
+    width: 100%;
+    padding: 10px;
+}
+.Sinister-big {
+    font-size: 0.9rem;
 }
 
-.player-album h2{
-    font-size: 0.7rem;
-    margin-top: -15px;
-}
-.player-album p {
+.player-album .sinister-reproduction .subtitle-sin {
     font-size: 0.5rem;
-    margin-left: 10px;
-    margin-top: -7px;
 }
 
-.player-album h2 a {
-    text-decoration: none;
-    color: white;
+.sinister-reproduction {
+    width: 25%;
+    /* background-color: yellowgreen; */
+    margin-right: 20%;
+    align-self: center;
+}
+.sin-icons {
+    width: 25%;
+    /* background-color: blueviolet; */
+    align-self: center;
+    margin-right: 14px;
+    color:rgb(166, 162, 162);
 }
 
-.player-album p a {
-    color:  rgb(166, 162, 162);
-    text-decoration: none;
-}
 
-.player-icons {
-    margin-top: 33px;
-    margin-left: 15px;
-    font-size: 0.7rem;
-    color: white;}
-
-.player-controler {
-align-self: center;
-width: 25%;
-}
 
 /* playing central bar */
+
+
+.player-controler {
+    align-self: center;
+    width: 22%;
+    }
 
 .grey-bar100 {
     width: 100%;
     height: 3px;
     background-color: #808080;
+    margin-top: 7px;
   }
   .white-bar60 {width: 25%;
        height: 3px;
        background-color: #DDD;}
+    
+.player-controler-time {
+display: flex;
+}
 
+.player-controler-time-min {
+margin-right: 15px;
+}
 
+.player-controler-time-min2 {
+    margin-left: 15px;
+    }
 
+    .player-controler-time-min,p {
+        color: #DDD;
+    }
 
+.list-last-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+.list-last-icons li i {
+font-size: 0.7rem;
+color: #DDD;
+margin-bottom: 5px;
+}
+
+.volume-footer {
+    background-color: rgb(31, 31, 31);
+    flex-basis: 15%;}
+
+.right-icons-footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #DDD;
+}
+
+.grey-bar-2-100 {
+    width: 35%;
+    height: 2px;
+    background-color: #808080;
+    margin-top: 7px;
+  }
+  .white-bar-2-60 {width: 25%;
+       height: 3px;
+       background-color: #DDD;}
 
 @media screen and (max-width: 1100px)
  {
 
 .menu-list {
-    display: flex;
+display: flex;
 flex-wrap: wrap;}
 
 .pic-container{
@@ -366,5 +429,30 @@ flex-basis: calc(100%/4);}
 
     .pic-container {
         flex-basis: 50%;}
+
+        .sidebar {
+            flex:2;
         }
+       .menu-list-2 .create-for-li img{
+        height: 120px;
+       }
+
+       .popular-img img {
+       height: 120px;
+    }
+    }
+
+    @media screen and (max-width: 320px)
+    {
+        a.btn {
+            padding: 15px 15px;
+            margin-right: 10px;
+            font-size: 0.6rem;
+            border-radius: 50px;
+            ;}
+            
+
+    }
+
+
 
