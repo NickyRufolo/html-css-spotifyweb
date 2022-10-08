@@ -23,6 +23,8 @@ main
 
 
 /* sidebar */
+.mobile-side
+{display: none;}
 
 .sidebar {
 flex:1;
@@ -437,12 +439,11 @@ flex-basis: calc(100%/4);}
         height: 120px;
        }
 
-       .popular-img img {
-       height: 120px;
-    }
-    }
 
-    @media screen and (max-width: 320px)
+    
+}
+
+    @media screen and (max-width: 425px)
     {
         a.btn {
             padding: 15px 15px;
@@ -450,9 +451,32 @@ flex-basis: calc(100%/4);}
             font-size: 0.6rem;
             border-radius: 50px;
             ;}
-            
-
     }
 
+
+
+
+    @media screen and (max-width: 320px)
+{
+    .sidebar {
+        flex:1;
+    }
+
+/* sidebar */
+
+.top-nav {
+    display: none;
+}
+
+
+.bottom-nav {
+    display: none;
+}
+
+.mobile-side
+{display: block;
+color: white;}
+
+} 
 
 
